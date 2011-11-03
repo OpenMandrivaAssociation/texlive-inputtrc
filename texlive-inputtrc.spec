@@ -1,3 +1,9 @@
+# revision 21260
+# category Package
+# catalog-ctan /macros/latex/contrib/inputtrc
+# catalog-date 2011-02-01 07:24:26 +0100
+# catalog-license lppl1.3
+# catalog-version 0.2d
 Name:		texlive-inputtrc
 Version:	0.2d
 Release:	1
@@ -53,6 +59,7 @@ somewhat resembles those of packages FiNK and inputfile.
 %doc %{_texmfdistdir}/source/latex/inputtrc/gather.tex
 %doc %{_texmfdistdir}/source/latex/inputtrc/inputtrc.tex
 %doc %{_texmfdistdir}/source/latex/inputtrc/makedoc.cfg
+%doc %{_tlpkgobjdir}/*.tlpobj
 
 #-----------------------------------------------------------------------
 %prep
@@ -63,3 +70,5 @@ somewhat resembles those of packages FiNK and inputfile.
 %install
 mkdir -p %{buildroot}%{_texmfdistdir}
 cp -fpar tex doc source %{buildroot}%{_texmfdistdir}
+mkdir -p %{buildroot}%{_tlpkgobjdir}
+cp -fpa tlpkg/tlpobj/*.tlpobj %{buildroot}%{_tlpkgobjdir}
