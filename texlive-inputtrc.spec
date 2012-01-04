@@ -6,7 +6,7 @@
 # catalog-version 0.2d
 Name:		texlive-inputtrc
 Version:	0.2d
-Release:	1
+Release:	2
 Summary:	Trace which file loads which
 Group:		Publishing
 URL:		http://www.ctan.org/tex-archive/macros/latex/contrib/inputtrc
