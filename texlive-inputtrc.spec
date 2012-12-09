@@ -1,12 +1,12 @@
-# revision 28019
+# revision 21260
 # category Package
 # catalog-ctan /macros/latex/contrib/inputtrc
-# catalog-date 2012-10-16 10:36:45 +0200
+# catalog-date 2011-02-01 07:24:26 +0100
 # catalog-license lppl1.3
-# catalog-version 0.3
+# catalog-version 0.2d
 Name:		texlive-inputtrc
-Version:	0.3
-Release:	1
+Version:	0.2d
+Release:	2
 Summary:	Trace which file loads which
 Group:		Publishing
 URL:		http://www.ctan.org/tex-archive/macros/latex/contrib/inputtrc
@@ -37,17 +37,18 @@ somewhat resembles those of packages FiNK and inputfile.
 
 #-----------------------------------------------------------------------
 %files
-%{_texmfdistdir}/tex/latex/inputtrc/inputtrc.RLS
 %{_texmfdistdir}/tex/latex/inputtrc/inputtrc.sty
+%doc %{_texmfdistdir}/doc/latex/inputtrc/FileList.txt
 %doc %{_texmfdistdir}/doc/latex/inputtrc/README
 %doc %{_texmfdistdir}/doc/latex/inputtrc/README.pdf
+%doc %{_texmfdistdir}/doc/latex/inputtrc/README.txt
 %doc %{_texmfdistdir}/doc/latex/inputtrc/RELEASE.txt
-%doc %{_texmfdistdir}/doc/latex/inputtrc/SrcFILEs.txt
 %doc %{_texmfdistdir}/doc/latex/inputtrc/inputtrc.pdf
 #- source
 %doc %{_texmfdistdir}/source/latex/inputtrc/README.tex
+%doc %{_texmfdistdir}/source/latex/inputtrc/gather.tex
 %doc %{_texmfdistdir}/source/latex/inputtrc/inputtrc.tex
-%doc %{_texmfdistdir}/source/latex/inputtrc/srcfiles.tex
+%doc %{_texmfdistdir}/source/latex/inputtrc/makedoc.cfg
 
 #-----------------------------------------------------------------------
 %prep
@@ -58,3 +59,17 @@ somewhat resembles those of packages FiNK and inputfile.
 %install
 mkdir -p %{buildroot}%{_texmfdistdir}
 cp -fpar tex doc source %{buildroot}%{_texmfdistdir}
+
+
+%changelog
+* Wed Jan 04 2012 Paulo Andrade <pcpa@mandriva.com.br> 0.2d-2
++ Revision: 752795
+- Rebuild to reduce used resources
+
+* Sat Nov 05 2011 Paulo Andrade <pcpa@mandriva.com.br> 0.2d-1
++ Revision: 718721
+- texlive-inputtrc
+- texlive-inputtrc
+- texlive-inputtrc
+- texlive-inputtrc
+
