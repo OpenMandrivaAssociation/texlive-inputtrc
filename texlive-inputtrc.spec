@@ -1,6 +1,6 @@
 Name:		texlive-inputtrc
 Version:	28019
-Release:	1
+Release:	2
 Summary:	Trace which file loads which
 Group:		Publishing
 URL:		http://www.ctan.org/tex-archive/macros/latex/contrib/inputtrc
