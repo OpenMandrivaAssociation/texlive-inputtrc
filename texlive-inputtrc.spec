@@ -3,7 +3,7 @@ Version:	28019
 Release:	2
 Summary:	Trace which file loads which
 Group:		Publishing
-URL:		http://www.ctan.org/tex-archive/macros/latex/contrib/inputtrc
+URL:		https://www.ctan.org/tex-archive/macros/latex/contrib/inputtrc
 License:	LPPL1.3
 Source0:	http://mirrors.ctan.org/systems/texlive/tlnet/archive/inputtrc.r%{version}.tar.xz
 Source1:	http://mirrors.ctan.org/systems/texlive/tlnet/archive/inputtrc.doc.r%{version}.tar.xz
